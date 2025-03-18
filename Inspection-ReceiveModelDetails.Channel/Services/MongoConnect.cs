@@ -1,6 +1,6 @@
 using MongoDB.Driver;
 
-namespace InspectionTemplate.Channel.Services
+namespace InspectionReceiveModelDetails.Channel.Services
 {
     public class MongoConnect
     {

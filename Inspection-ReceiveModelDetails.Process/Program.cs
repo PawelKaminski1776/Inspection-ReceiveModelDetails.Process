@@ -1,11 +1,11 @@
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json;
 using System.Globalization;
-using InspectionTemplate.Handlers;
-using InspectionTemplate.Controllers.DtoFactory;
-using InspectionTemplate.Process;
-using InspectionTemplate.Channel.Services;
-using InspectionTemplate.Messages.Dtos;
+using InspectionReceiveModelDetails.Handlers;
+using InspectionReceiveModelDetails.Controllers.DtoFactory;
+using InspectionReceiveModelDetails.Process;
+using InspectionReceiveModelDetails.Channel.Services;
+using InspectionReceiveModelDetails.Messages.Dtos;
 
 var builder = WebApplication.CreateBuilder(args);
 
