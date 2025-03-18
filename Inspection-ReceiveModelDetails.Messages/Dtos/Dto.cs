@@ -2,14 +2,22 @@ using NServiceBus;
 
 namespace InspectionReceiveModelDetails.Messages.Dtos
 {
-    public class MessageRequest : IMessage
+    public class ReceiveModelDetailsRequest : IMessage
     {
-        public string Message { get; set; }
+        public string Username { get; set; }
     }
 
-    public class MessageResponse : IMessage
+    public class ReceiveModelDetailsResponse : IMessage
     {
-        public string Message { get; set; }
+        public List<ReceiveModelDetailsModels> Models { get; set; }
+    }
+
+    public class ReceiveModelDetailsModels
+    {
+        public string ModelURL { get; set; }
+        public string InspectionName { get; set; }
+
+        public string status { get; set; }
     }
 
 }

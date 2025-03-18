@@ -13,13 +13,13 @@ public class DtoFactory : IDtoFactory
         switch (dtoType.ToLower())
         {
         
-            case "messagedto":
+            case "receievemodeldetailsdto":
                 if (args.Length < 2 || !(args[0] is string))
                     throw new ArgumentException("Invalid arguments for messageRequest.");
 
-                return new MessageRequest
+                return new ReceiveModelDetailsRequest
                 {
-                    Message = (string)args[0]
+                    Username = (string)args[0]
                 };
 
             default:
@@ -34,7 +34,7 @@ public class DtoFactory : IDtoFactory
 
         switch (dtoType.ToLower())
         {
-            case "messagedto":
+            case "receievemodeldetailsdto":
                 return dto;
             default:
                 throw new ArgumentException($"Invalid DTO type: {dtoType}");
